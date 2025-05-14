@@ -2,7 +2,7 @@ global:
   smtp_smarthost: 'smtp.gmail.com:587'
   smtp_from: 'mvarunmathi2004@gmail.com'
   smtp_auth_username: 'mvarunmathi2004@gmail.com'
-  smtp_auth_password: 'ahiw jlsz dzxa ohso'
+  smtp_auth_password: //your app password
   resolve_timeout: 5m
 
 route:
@@ -24,7 +24,7 @@ receivers:
 
   - name: 'slack-notifications'
     slack_configs:
-      - api_url: 'https://hooks.slack.com/services/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'
+      - api_url: // your api url
         channel: '#new-channel'
         username: 'alertmanager'
         icon_emoji: ':warning:'
